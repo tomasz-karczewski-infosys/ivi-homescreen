@@ -16,7 +16,7 @@
 [submodule "third_party/waypp"]
 	path = third_party/waypp
 	url = https://github.com/tomasz-karczewski-infosys/waypp
-	branch = dev
+	branch = tkarczewski_waypp_working_without_xdg_output
 [submodule "third_party/tomlplusplus"]
 	path = third_party/tomlplusplus
 	url = https://github.com/marzer/tomlplusplus.git
