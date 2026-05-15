@@ -71,7 +71,7 @@ WaylandWindow::WaylandWindow(const size_t index,
 
     m_wait_for_configure = false;
   }
-#elif defined(ENABLE_XDG_CLIENT)
+#elif ENABLE_XDG_CLIENT
   {
     m_xdg_surface =
         xdg_wm_base_get_xdg_surface(m_display->GetXdgWmBase(), m_base_surface);
