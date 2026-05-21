@@ -91,6 +91,13 @@ WaylandWindow::WaylandWindow(const size_t index,
   }
 #endif
 
+#if ENABLE_SIMPLE_SHELL_CLIENT
+  {
+    // the surface is ready after creation and commit.
+    spdlog::info("({}) INFO Using simple-shell surface", m_index);
+  }
+#endif
+
   wl_surface_commit(m_base_surface);
 
 #if ENABLE_AGL_SHELL_CLIENT
